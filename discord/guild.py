@@ -203,7 +203,11 @@ class Guild(Hashable):
         The guild's description.
     verification_level: :class:`VerificationLevel`
         The guild's verification level.
-    explicit_content_filter: :class:`ContentFilter`
+    vanity_url_code: Optional[:class:`str`]
+        The guild's vanity url code, if any
+        
+        .. versionadded:: 2.0
+    explicit_content_filte: :class:`ContentFilter`
         The guild's explicit content filter.
     default_notifications: :class:`NotificationLevel`
         The guild's notification settings.
